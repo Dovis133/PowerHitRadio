@@ -27,6 +27,10 @@
 }
 
 
+/*Sheriff*/
+[data-cid^="4652147"].cm .msg .from .un, #user-lists .list .role-manager.id-4652147 .name {
+  color: rgba(255, 18, 148, 1) !important;
+}
 
 
 
@@ -444,6 +448,18 @@
 }
 
 
+(*****ICON Domas*****)
+
+
+[data-cid^="6310947-"] .msg .from .un {
+    position: relative;
+    left:-1px;
+    padding-left: 18px;
+    background-image: url('https://i.imgur.com/mfNO8aJ.png');
+    background-repeat: no-repeat;
+    background-position: -1px center;
+    background-size: 15px auto;
+}
 
 
 
