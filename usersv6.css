@@ -385,6 +385,71 @@
 
 
 
+ /* Deividas */
+#chat-messages .id-25542157 .badge-box i.bdg
+{
+        background-image:       url('https://i.imgur.com/LJIODNf.jpg');
+        background-size:        cover;
+}
+
+#user-rollover.id-25542157 .info .badge-box .bdg {
+	background: url(https://i.imgur.com/LJIODNf.jpg)
+        center no-repeat!important;
+}
+
+
+
+ /* Regimantas */
+#chat-messages .id-28631750 .badge-box i.bdg
+{
+        background-image:       url('https://i.imgur.com/fgWU5rJ.gif');
+        background-size:        cover;
+}
+
+#user-rollover.id-28631750 .info .badge-box .bdg {
+	background: url(https://i.imgur.com/fgWU5rJ.gif)
+        center no-repeat!important;
+}
+
+
+
+
+
+
+#user-rollover.id-6310947 .meta {
+    height: 145px!important;
+}
+
+#user-rollover.id-6310947 .joined:after {
+    position: absolute;
+    content: 'CSS Developer';
+    background-image: url(**************)
+    background-repeat: no-repeat;
+    position: absolute;
+    color: #00799E!important;
+    margin: 47px 0 0 -115px;
+    padding-left: 21px!important;
+    font-weight: 400;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 14px;
+}
+
+
+
+#user-rollover.id-6310947 .level:before {
+    content: url(https://i.imgur.com/briuSkl.png);
+    margin: 0 60px 0 !important;
+    position: absolute;
+}
+
+#user-rollover.id-6310947 .level:after {
+    content: "Rus Mafia";
+    display: inline-block;
+    color: #E54649!important;
+    font-weight: bold;
+    margin: 0px 0px 0 30px!important;
+}
 
 
 
