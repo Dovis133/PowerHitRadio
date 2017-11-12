@@ -1,284 +1,105 @@
-/* Making sure the json gets applied */
-.icon-room {
-	width: 84px;
-	top: 14px !important; left: 5px !important;
-	background: url(https://i.imgur.com/mt4jBPY.png) 0 / cover no-repeat !important;
-}
-#room-name, #room-host {
-	left: 95px;
-}
-.room-background {
-	background: url(https://i.imgur.com/JvwlYC5.jpg) 0 0 / 1600px 900px no-repeat !important;
-}
-#playback .background img {
-	display: none;
-}
-#playback .background {
-	background: url(https://dl.dropboxusercontent.com/s/59fnfbk24s8l6zm/playback.png) 0 0 / cover no-repeat;
+![basicBot](http://i.imgur.com/efwl0PS.png)
 
-	width: 874px; height: 329px;
-	left: -196px; top: 0;
-}
+### Contact
 
-#chat .badge-box,
-.buttons .thumb .background {
-	background: none;
-}
-/* Adding some transparency */
-#dj-button,
-.bottom, #dj-button .left,
-#footer, .app-header, .app-right, .app-right .friends, #footer-user .info,
-#playlist-panel, #search, #playlist-menu,
-.media-list .selected .actions, .media-list .actions,
-#user-rollover, #user-rollover .info, .thumb .background,
-#the-user-profile, #user-profile, #user-store, #user-friends, #user-history, #user-communities, #user-settings, #user-shop, #user-inventory,
-#user-view, #user-menu,
-#user-menu .item,
-#woot-rs, #grab-rs, #meh-rs,
-#woot-rs .title, #grab-rs .title, #meh-rs .title,
-#app-menu, #app-menu .list {
-	background: rgba(0,0,0,.5) !important;
-}
-/*less transparent things*/
-#playlist-panel,
-#playlist-menu,
-#room-settings,
-#room-settings-menu {
-	background: rgba(0,0,0,.8) !important;
-}
+[![Slack](https://basicbot.herokuapp.com/badge.svg)](https://basicbot.herokuapp.com/) [![Facebook group](https://img.shields.io/badge/facebook-group-3b5998.svg?style=flat)](https://facebook.com/groups/basicBot) [![Twitter](https://img.shields.io/twitter/follow/bscbt.svg?style=social)](https://twitter.com/bscbt)
 
-/* medium dark */
-.back,
-.row.selected,
-#user-menu .selected,
-#user-menu .item:hover,
-.tab-menu button,
-.experience .xp .bar,
-.user-content.profile .notifications .row,
-#app-menu:hover, #app-menu.open, #rs-skip-button, #history-button,
-#app-menu .list .item:hover {
-	background: rgba(100,100,100,.5) !important;
-}
-#app-menu .android-badge:hover,
-#app-menu .iphone-badge:hover {
-	background-color: rgba(100,100,100,.5) !important;
-}
-/* medium grey */
-#user-lists .list .user:hover,
-.buttons .button:hover,
-.actions .action:hover,
-.back:hover,
-.tab-menu button:hover,
-#room-settings-menu .item.selected,
-#user-menu .count, .requests .count, .buttons .count, .request-count, .friends .header i,
-.header-panel-button.selected {
-	background: rgba(150,150,150,.5) !important;
-}
-/* grey */
-.tab-menu button.selected {
-	background: rgba(200,200,200,.5) !important;
-}
+Email enquiries: [hi[at]benzi[dot]io](mailto:hi@benzi.io)
 
-/*blue color*/
-#playlist-activate-button span,
-#playlist-menu .menu .row .count{
-	color: #6ac1fe;
-}
-#user-lists .header .button.staff.selected {
-	border-bottom: 1px solid #6ac1fe;
-}
-#playlist-activate-button {
-	background: #233d4c;
-}
+### Usage
 
-#playback-controls {
-	-webkit-filter: grayscale(20%);
-	filter: grayscale(20%);
-}
+Bookmark the following code. To run the bot, click the bookmark.
 
-/* App menu lower button */
-#chat .delete-button, .rcs-delete,
-#app-menu .logout, #rcs-unload {
-	background: rgba(150,50,50,.2) !important;
-	border: 1px solid rgba(250,50,50,.2) !important;
-}
-#chat .delete-button:hover, .rcs-delete:hover,
-#app-menu .logout:hover, #rcs-unload:hover {
-	background: rgba(150,50,50,.8) !important;
-	border: 1px solid rgba(250,50,50,.8) !important;
-}
+```
+javascript:(function(){$.getScript('https://rawgit.com/basicBot/source/master/basicBot.js');})();
+```
 
-/* Chat */
-#chat-input {
-	transition: all .25s linear;
-	background: none !important;
-	box-shadow:
-		inset 0 0 0 20px rgba(0,0,0,.5),
-		inset 0 0 0 1px #000,
-		0 0 0 #000
-	!important;
-}
-#chat .focused {
-	box-shadow:
-		inset 0 0 0 20px rgba(30,30,30,.8),
-		inset 0 0 0 1px #EEE,
-		0 0 5px #EEE
-	!important;
-}
-#chat .cm:nth-child(odd) {
-	background: rgba(10,10,10,.8);
-}
-#chat .cm:nth-child(even) {
-	background: rgba(25,25,25,.8);
-}
+If this does not work, go to [basicBot.js](https://raw.githubusercontent.com/basicBot/source/master/basicBot.js) and copy paste its content into your console (accessible in chrome by pressing F12) when on plug.dj in your community.
+
+### Commands
+
+These can be found in [the commands list](commands.md).
+
+### Blacklists
+
+Examples of blacklists can be found in [the customization repository](https://github.com/basicBot/custom/tree/master/blacklists).
+You can add blacklists in the settings of the bot via the methods given in that same repository. See below for more information.
 
 
-/*tooltips*/
-#tooltip span, #tooltip.blue span {
-	background: rgba(150,150,150,.8) !important;
-}
-#tooltip .corner {
-	border-top: 10px solid transparent !important;
-	border-right: 0px solid transparent !important;
-	border-left: 10px solid rgba(150,150,150,.8) !important;
-	border-bottom: 10px solid transparent !important;
-}
-#tooltip.right .corner {
-	border-top: 10px solid rgba(150,150,150,.8) !important;
-	border-right: 10px solid rgba(150,150,150,.8) !important;
-	border-left: 10px solid transparent !important;
-	border-bottom: 10px solid transparent !important;
-}
+### Extending functionality and custom default settings
 
+basicBot can be customized to fit your needs. Please refer to [the customization repository](https://github.com/basicBot/custom) for more info.
+Please do not try to if you are not confident in your JavaScript capabilities.
 
-/* Big Buttons */
-#room-settings a:hover, #chat a:hover {
-	color: hsl(200,100%,55%) !important;
-	text-shadow: 0 0 5px;
-}
-#room-settings .general-settings button,
-#room-settings .general-settings .option.enabled button.off {
-	background: linear-gradient(hsl(220,5%,20%), hsl(220,5%,10%)) !important;
-	box-shadow: inset 0 0 2px hsla(0,0%,100%,.5) !important;
-}
-#room-settings .general-settings button:hover,
-#room-settings .general-settings .option.enabled button.off:hover {
-	background: linear-gradient(hsl(210,10%,30%), hsl(220,10%,20%)) !important;
-}
-#room-settings .general-settings button.off,
-#room-settings .general-settings .option.enabled button.on,
-.tab-menu button:hover, .dropdown:hover {
-	background: linear-gradient(hsl(210,30%,40%), hsl(210,30%,30%)) !important;
-}
+<!--
+### basicBot Chrome Extension
 
-/* User settings */
-.tab-menu button, #user-settings .container button, .subscribe-button, .dropdown, #dialog-user-role .role-menu {
-	background: linear-gradient(hsl(220,5%,20%), hsl(220,5%,10%));
-	box-shadow: inset 0 0 2px hsla(0,0%,100%,.5) !important;
-}
-#user-settings .container button:hover {
-	background: linear-gradient(hsl(0,40%,30%), hsl(0,40%,20%));
-}
-.subscribe-button:hover {
-	background: linear-gradient(hsl(40,40%,30%), hsl(40,40%,20%));
-}
-.dropdown dt {
-	box-shadow: inset -39px 0 0 hsla(0,0%,100%,.15) !important;
-}
-.dropdown.open, .dropdown.open dt, #dialog-user-role .role-menu:hover {
-	font-weight: normal;
-}
-.dropdown dt .level {
-	color: #eee !important;
-}
-.dropdown dd span {
-	color: #AAA;
-}
-.dropdown dd .row:hover span {
-	color: #FFF;
-}
-.dropdown dd, #chat-suggestion, #dialog-user-role .role-menu .menu ul li, #search-suggestion li, #dialog-restricted-media .row.selected {
-	background: hsla(210,10%,10%,.8);
-}
-#dialog-user-role .role-menu .menu ul li {
-	border-color: hsla(210,10%,8%,.8);
-}
-.dropdown dd .row:hover,
-.chat-suggestion-item[style='background: rgb(45, 49, 58);'],
-#search-suggestion .search-suggestion-item.selected,
-#dialog-restricted-media .row.selected,
-#dialog-user-role .role-menu .menu ul li:hover {
-	background: linear-gradient(hsla(210,10%,20%,.8), hsla(210,10%,15%,.8)) !important;
-}
+[Get the Official basicBot Chrome Extension](https://chrome.google.com/webstore/detail/basicbot/bjinmbkeneigmkkkpcmcokphbjkepeie)
+-->
 
-.icon.icon-check-purple,
-.icon.icon-next-track,
-.icon.icon-check-blue,
-.icon.icon-check-circle,
-.icon.icon-chat,
-.icon.icon-population,
-.icon.icon-waitlist,
-#chat-header,
-#playlist-button {
-	filter: grayscale(1);
-}
-#user-menu .item:hover i {
-	filter: grayscale(2) brightness(200%);
-}
+### Credits
 
+| Developers |
+|:----------:|
+| [![Benzi](https://www.gravatar.com/avatar/a9a9e27f874dadfaf0e21e8ecf8e9833.jpg?s=100)](https://github.com/Benzi) |
+| **[Benzi](https://github.com/Benzi)** |
 
-/* Vote buttons */
-#vote {
-	box-shadow: 0 0 10px #000;
-}
-#app #vote .bottom {
-	background: transparent !important;
-}
-#vote .selected,
-#vote .selected .value {
-	font-weight: bold;
-	color: #FFF;
-}
-#woot, #grab, #meh {
-	background: linear-gradient(rgba(10,10,10,.5), rgba(0,0,0,.5)) !important;
-}
-#woot.selected, #woot-rs .title, #woot-rs-list::-webkit-scrollbar-thumb {
-	background: linear-gradient(hsla(90,50%,50%,.8), hsla(90,50%,40%,.8)) !important;
-}
-#grab.selected, #grab-rs .title, #grab-rs-list::-webkit-scrollbar-thumb {
-	background: linear-gradient(hsla(270,50%,50%,.8), hsla(265,50%,40%,.8)) !important;
-}
-#meh.selected, #meh-rs .title, #meh-rs-list::-webkit-scrollbar-thumb {
-	background: linear-gradient(hsla(5,50%,50%,.8), hsla(0,50%,40%,.8)) !important;
-}
-/* Grab menu */
-.pop-menu, .pop-menu .bar {
-	background: transparent;
-}
-.pop-menu .bar {
-	background: linear-gradient(hsla(260,50%,50%,.8), hsla(260,50%,30%,.8));
-}
-.pop-menu .bar-divider {
-	background: linear-gradient(hsla(0,0%,90%,.8), hsla(0,0%,60%,.8));
-}
-.pop-menu .menu ul {
-	background: hsla(260,5%,7%,.8);
-}
-.pop-menu .menu ul i + span {
-	font-weight: bold;
-}
-.pop-menu .menu ul li:hover {
-	background: linear-gradient(hsla(260,50%,50%,.2), hsla(260,50%,30%,.2));;
-}
-.pop-menu .menu ul .create:hover {
-	background: linear-gradient(hsl(260,40%,50%), hsl(260,40%,30%));
-}
-.pop-menu .menu::-webkit-scrollbar {
-	background: hsl(260,10%,20%) !important;
-	box-shadow: inset 0 0 10px #000;
-	width: 10px;
-}
-.pop-menu .menu::-webkit-scrollbar-thumb {
-	background: linear-gradient(to right, hsl(260,40%,60%), hsl(260,40%,40%));
-	box-shadow: inset 0 0 5px hsla(0,0%,100%,.3);
-}
+#### Special thanks :sparkles:
+
+- Fungus: His Tastybot has been a source of inspiration for most of the features, and his help with coding problems has been invaluable to make this bot.
+- TAT, Origin and other Litebot contributors: Their Litebot has inspired features like Roulette.
+- Henchman: Never knew this undertaking would give me a friend too.
+
+#### Translations :globe_with_meridians:
+
+I would like to thank everyone who have contributed in translating the bot via [Transifex](https://www.transifex.com/basicbot/basicbot) :pray:
+
+| Translator | Languages |
+|:----------:|:---------:|
+| 3GoneS | Lithuanian |
+| ajdin291 | Serbian |
+| Bart Boom | Dutch |
+| cirktv| Dutch |
+| clone287 | Turkish |
+| DivinityRSPS | German |
+| [Filly](https://github.com/fillylumi) | French |
+| Gradure | Dutch |
+| H0LYbear | Turkish |
+| hadi555 | German |
+| [Hasztagg](https://github.com/Hasztagg) | Polish |
+| Helvijs Baumanis | Latvian |
+| Inga Deveiko | Latvian |
+| Janis Petrovskis | Latvian |
+| Leopard105 | Czech |
+| linusworld | Chinese (Taiwan) |
+| Liutauras Vaitkus | Lithuanian |
+| Łukasz Strzałek | Polish |
+| [Mikey Wazowsky](https://github.com/MikeyWazowsky) | Polish |
+| [Motel Bible](https://github.com/motelbible) | Portuguese |
+| [NDA](https://github.com/NDAthereal) | French |
+| Patrick H-Hansen | Danish |
+| Rie | Danish |
+| Schokin | Spanish |
+| Shone | Serbian |
+| smt287 | Turkish |
+| Tessi Tess Randysková | Czech |
+| TIGJERUX | Latvian |
+| xMaxist | Dutch |
+| [Yenn](https://twitter.com/tsy_yenn) | Chinese (Taiwan), Malay |
+| Јовев Немања | Serbian |
+
+### License
+
+Copyright &copy; 2014-2017 basicBot
+
+Modifications (including forks) of the code to fit personal needs are allowed only for personal use and should refer back to the original source.
+This software is not for profit, any extension, or unauthorised person providing this software is not authorised to be in a position of any monetary gain from this use of this software. Any and all money gained under the use of the software (which includes donations) must be passed on to the original author.
+
+### Disclaimer
+
+This bot is developed independently. Changes may be made without notice. There is no guarantee for the bot to be functioning perfectly.
+plug.dj admins have the right to request changes.
+By using this chatbot you agree to not use it for violating [plug.dj's Terms of Service](https://plug.dj/terms).
+You also agree not to alter the bot's code, unless in the cases explicitly stated above, for personal use, or for the sole purpose of submitting a pull request with a bug fix or a feature update, at which point it will be looked at and decided by the authors of the project.
+Please refer to the original author/repository at all times, even on personal forks that are not private.
+Any requests for changes can be requested via email, through GitHub or via plug.dj.
