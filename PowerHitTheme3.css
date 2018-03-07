@@ -20,3 +20,15 @@
 #room-name, #room-host {
 	left: 90px;
 }
+
+#footer, .app-header, .app-right, .app-right .friends, #footer-user .info,
+#playlist-panel, #search, #playlist-menu,
+.media-list .selected .actions, .media-list .actions,
+#user-rollover, #user-rollover .info, .thumb .background,
+#the-user-profile, #user-profile, #user-store, #user-friends, #user-history, #user-communities, #user-settings, #user-shop, #user-inventory,
+#user-view, #user-menu,
+#user-menu .item,
+#app-menu, #app-menu .list {
+	background: rgba(0,0,0,.5) !important;
+}
+
