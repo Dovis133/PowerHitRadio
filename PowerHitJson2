@@ -2,7 +2,7 @@
    "room":"PowerHitRadio",
    "author":"EA$Y and Katleris",
    "icon":null",
-   "css":"https://rawgit.com/Domasbaf/PowerHitRadio/master/PowerHitCSS2.css",
+   "css":"https://rawgit.com/Domasbaf/PowerHitRadio/master/PowerHitCSS3.css",
    "rules":{  
       "allowAutorespond":true,
       "allowAutowoot":true,
